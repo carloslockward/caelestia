@@ -10,3 +10,5 @@ if status is-interactive
         echo -en "\e]133;A\e\\"
     end
 end
+alias condasetup="eval /home/carlos/miniconda3/bin/conda \"shell.fish\" \"hook\" | source"
+set -gx QT_QPA_PLATFORMTHEME qt6ct
