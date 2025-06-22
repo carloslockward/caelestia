@@ -1,8 +1,7 @@
 #!/bin/fish
 
 function get-width -a font size string
-    magick -font $font -font Noto-Sans-CJK-JP -font Noto-Sans-CJK-SC -font Noto-Sans-CJK-TC -font Noto-Sans-CJK-KR -font Noto-Sans-CJK-HK -font Noto-Sans-CJK-TC \
-        -pointsize $size label:$string -format '%w' info:
+    magick -font $font -pointsize $size label:$string -format '%w' info:
 end
 
 set -l font $argv[1]
